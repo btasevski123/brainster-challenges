@@ -1,0 +1,169 @@
+/* resets */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #638caa;
+}
+
+/* background colors */
+.light-gray-bg {
+  background-color: #dbdbdb;
+}
+.light-brown-bg {
+  background-color: #bcb9aa;
+}
+.green-bg {
+  background-color: #9ce0d1;
+}
+.gray-bg {
+  background-color: #9aa7b8;
+}
+.light-red-bg {
+  background-color: #f09e84;
+}
+.light-blue-bg {
+  background-color: #b7ced6;
+}
+.purple-bg {
+  background-color: #514354;
+}
+
+h2 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #fff;
+}
+
+.h2-white {
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* navbar code start */
+
+nav i {
+  margin-left: 4rem;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  transition: 0.3s ease-in-out;
+  color: #000;
+}
+
+nav ul {
+  float: right;
+  margin-right: 4rem;
+  padding-top: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav i:hover {
+  color: #bcb9aa;
+}
+
+/* img-section start */
+
+.img-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  width: 550px;
+}
+
+/* section-1 start */
+
+.item {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.item i {
+  font-size: 2.2rem;
+}
+
+/* section-2 start */
+
+.f-box {
+  width: 50%;
+  float: left;
+  padding: 1rem;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-p {
+  padding: 25px;
+}
+
+.reverse {
+  float: right;
+}
+
+/* section-3 start */
+
+.inner {
+  width: 33.333%;
+  float: left;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* section-4 start */
+
+.social-media {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.social-media i {
+  margin: 4rem;
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.social-media i:hover {
+  color: #bcb9aa;
+}
+
+/* footer start */
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
