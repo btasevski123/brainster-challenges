@@ -6,4 +6,4 @@ after git add follows git commit -m "descripton".
 and finaly i attach the branch remote with- git push "link"
 
 
-*of course i know how to create branches trough gitlab but i want to practice the terminal. 
+*of course i know how to create branches through gitlab but i want to practice the terminal. 
