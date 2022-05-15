@@ -1,0 +1,9 @@
+first i create a local repo: git init,
+then new branch: git checkout -b name
+I add all the files in this brunch: git add .  .
+after git add follows git commit -m "descripton".
+ connecting the local repo with the remote goes with this command: git remote add origin "link"
+and finaly i attach the branch remote with- git push "link"
+
+
+*of course i know how to create branches trough gitlab but i want to practice the terminal. 
