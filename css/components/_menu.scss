@@ -1,0 +1,105 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+
+    .tablet-menu {
+        display: none;
+        border: 1px solid black;
+    
+        i {
+            padding: math.div(var.$gutter-base, 5);
+            
+        }
+    }
+
+    @include mix.tablet-styles {
+        position: static;
+        width: 100%;
+        
+        .tablet-menu {
+            display: block;
+        }
+
+    }
+
+    .inner-box {
+        @extend %wrap, %section;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footer {
+            margin-top: var.$gutter-base * 2;
+
+            a{
+                text-decoration: none;
+                color: var.$text-color-base;
+            }
+
+            p {
+                margin-bottom: 0;
+               
+            }
+        }
+        
+
+        @include mix.tablet-styles {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+
+
+            .navbar {
+                .logo {
+                    img {
+                        width: 80%;
+                    }
+                }
+                ul {
+                    display: none
+                }
+            }
+            .footer {
+                display: none
+
+            }
+        }
+
+        .navbar {
+        
+            ul{
+                @extend %section;
+                padding-left: 0;
+                margin-bottom: 0;
+                line-height: var.$line-height-base * 1.5;
+                list-style-type: none;
+                
+
+                li {
+                    a {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        color: var.$text-color-base;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+    
