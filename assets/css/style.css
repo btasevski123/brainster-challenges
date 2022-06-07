@@ -1,0 +1,85 @@
+/* home page */
+.carousel-caption {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-custom {
+  width: 100% !important;
+  height: 75vh;
+}
+
+.paralax {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../Images/lights.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paralax1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/media.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-img {
+  width: 100% !important;
+  height: 300px;
+}
+
+.bg-footer {
+  background-color: #000;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+/* home page end */
+
+/* this banner is for all sections without home!  */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../Images/image1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+/* banner ends */
+
+/* about */
+
+.margin {
+  margin-top: -6rem;
+}
+.arrow-position {
+  width: 5%;
+}
+/* about ends */
+
+/* services */
+.bg-accordion,
+.bg-staff {
+  background-color: rgb(37, 35, 35);
+}
+/* services ends */
+
+/* contacts */
+.btn-hover:hover {
+    background-color: red;
+}
