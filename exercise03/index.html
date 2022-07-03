@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [3, 6, 22];
+
+let min = array[0];
+
+let max = array[0];
+
+for (let i = 1; i < array.length; i++) {
+  if (array[i] > max) {
+    max = array[i];
+  }
+  if (array[i] < min) {
+    min = array[i];
+  }
+}
+console.log(`Smallest ${min}, Largest  ${max}`);
+
+let delitelMax = 0;
+
+for (let i = 1; i < max; i++) {
+  if (max % i === 0) {
+    delitelMax++;
+  }
+}
+
+if (delitelMax > 2) {
+  console.log(`${max} is not a prime`);
+} else {
+  console.log(`${max} Is a prime`);
+}
+
+let delitelMin = 0;
+
+for (let i = 1; i < min; i++) {
+  if (min % i === 0) {
+    delitelMin++;
+  }
+}
+
+if (delitelMin > 2) {
+  console.log(`${min} is not a prime`);
+} else {
+  console.log(`${min} Is a prime`);
+}
+    </script>
+</body>
+</html>
