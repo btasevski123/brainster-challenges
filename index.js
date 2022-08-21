@@ -83,23 +83,23 @@ books.forEach((book) => {
   let td4 = document.createElement("td");
 
   let progressbar = document.createElement("div");
-  let myBar = document.createElement("div");
+  let percentBar = document.createElement("div");
   let percent = calcPercent(book.onPage, book.maxPages);
 
   progressbar.classList = "progressbar";
-  myBar.classList = "myBar";
+  percentBar.classList = "percentBar";
 
   td.innerText = book.title;
   td1.innerText = book.author;
   td2.innerText = book.maxPages;
   td3.innerText = book.onPage;
-  // td4.innerText = `${calcPercent(book.onPage, book.maxPages)} %`;
-  myBar.innerText = `${percent}%`;
-  myBar.style.width = `${percent}%`;
+  percentBar.innerText = `${percent}%`;
+  percentBar.style.width = `${percent}%`;
 
-  td4.append(progressbar, myBar);
   table.append(tr);
   tr.append(td, td1, td2, td3, td4);
+  td4.append(progressbar, percentBar);
+  progressbar.append(percentBar);
 });
 
 const form = document.querySelector("form");
@@ -109,10 +109,10 @@ const onPageInput = document.querySelector(".onPage");
 const maxPageInput = document.querySelector(".maxPage");
 const button = document.querySelector(".btn");
 
-document.body.append(form);
 
 function addBook(ev) {
   ev.preventDefault();
+
 
   const newBooks = {
     title: titleInput.value,
@@ -130,20 +130,19 @@ function addBook(ev) {
   const ProgressTd = document.createElement("td");
 
   let addprogressbar = document.createElement("div");
-  let addmyBar = document.createElement("div");
-  let percent = calcPercent(newBooks.onPage, newBooks.maxPages);
+  let addpercentBar = document.createElement("div");
 
-  addmyBar.innerText = `${percent}%`;
-  addmyBar.style.width = `${percent}%`;
+  addpercentBar.innerText = `${calcPercent(newBooks.onPage, newBooks.maxPages)}%`;
+  addpercentBar.style.width = `${calcPercent(newBooks.onPage, newBooks.maxPages)}%`;
   addprogressbar.classList = "progressbar";
-  addmyBar.classList = "myBar";
+  addpercentBar.classList = "percentBar";
 
   TitleTd.innerText = newBooks.title;
   AuthorTd.innerText = newBooks.author;
   MaxPagesTd.innerText = newBooks.maxPages;
   OnPageTd.innerText = newBooks.onPage;
 
-  ;
+
   if (
     !TitleTd.innerText ||
     !AuthorTd.innerText ||
@@ -164,7 +163,11 @@ function addBook(ev) {
 
   table.append(addTr);
   addTr.append(TitleTd, AuthorTd, MaxPagesTd, OnPageTd, ProgressTd);
-  ProgressTd.append(addprogressbar, addmyBar);
+  ProgressTd.append(addprogressbar, addpercentBar);
+  addprogressbar.append(addpercentBar);
 }
+
+// I use append here because form is the only  element that exists in html.
+document.body.append(form);
 
 form.addEventListener("submit", addBook);

@@ -1,26 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 body {
-    margin: 0;
-    padding: 5%;
-    background-color: rgb(248, 248, 210);
+  margin: 0;
+  padding: 2%;
+  background-color: rgb(248, 248, 210);
 }
 
+ul,
+table {
+  font-family: "Playfair Display", serif;
+}
 
 .progressbar {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(228, 11, 11);
-    border-radius: 5%;
-    /* border: 1px solid black; */
-    
-  }
   
-  .myBar {
-    height: 25px;
-    background-color: rgb(99, 226, 99);
-    text-align: center;
-    border-radius: 3%;
-    color: rgb(165, 131, 131);
-    /* border: 1px solid red; */
-  }
-  
+  background-color:  rgb(235, 222, 222);;
+}
 
+.percentBar {
+  height: 25px;
+  background-color: rgb(99, 226, 99);
+  text-align: center;
+  border-radius: 3%;
+  color: rgb(172, 88, 88);
+}
