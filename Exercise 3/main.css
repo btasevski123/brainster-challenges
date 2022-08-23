@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: rgb(46, 148, 46);
+}
+
+form {
+  width: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  text-align: center;
+  padding: 3%;
+}
+
+label {
+  font-weight: bold;
+}
