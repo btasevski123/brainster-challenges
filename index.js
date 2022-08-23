@@ -108,6 +108,7 @@ const authorInput = document.querySelector(".author");
 const onPageInput = document.querySelector(".onPage");
 const maxPageInput = document.querySelector(".maxPage");
 const button = document.querySelector(".btn");
+const inputs = document.querySelectorAll("input")
 
 
 function addBook(ev) {
@@ -165,6 +166,11 @@ function addBook(ev) {
   addTr.append(TitleTd, AuthorTd, MaxPagesTd, OnPageTd, ProgressTd);
   ProgressTd.append(addprogressbar, addpercentBar);
   addprogressbar.append(addpercentBar);
+
+  // Empty inputs after clicking add button (forgotten).
+  inputs.forEach((e) => {
+    e.value = "";
+  })
 }
 
 // I use append here because form is the only  element that exists in html.
