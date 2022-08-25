@@ -11,13 +11,11 @@ function Cube(a) {
     };
 }
 
-
 const newCube = new Cube(lenght);
 
 console.log(`The area of cube is ${newCube.cubeArea()}.`);
 
 console.log(`The perimetar of cube is ${newCube.cubePerimeter()}.`);
-
 
 // this is extra code because of design.
 const div = document.createElement("div");
@@ -26,7 +24,6 @@ const pPerimetar = document.createElement("p");
 
 pArea.textContent = `The area of cube is ${newCube.cubeArea()}.`;
 pPerimetar.textContent = `The perimetar of cube is ${newCube.cubePerimeter()}.`;
-
 
 document.body.append(div);
 div.append(pArea, pPerimetar);

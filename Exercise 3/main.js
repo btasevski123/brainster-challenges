@@ -31,6 +31,7 @@ class Form {
     };
 
     displayMethod() {
+        
         alert(`The message is from: ${this.from}  To: ${this.to} The subject is: ${this.subject} The message is: ${this.message} `)
     };
 }
