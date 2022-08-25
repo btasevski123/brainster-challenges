@@ -23,17 +23,11 @@ class Form {
 
     fillInputs() {
         
-        
-
-        inputFrom.value = this.form;
+        inputFrom.value = this.from;
         inputTo.value = this.to;
         inputSubject.value = this.subject;
         inputMessage.value = this.message;
 
-        inputFrom.value = promptFrom;
-        inputTo.value = promptTo;
-        inputSubject.value = promptSubject;
-        inputMessage.value = promptMessage;
     };
 
     displayMethod() {
