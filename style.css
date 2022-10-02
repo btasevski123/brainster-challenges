@@ -1,0 +1,174 @@
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+.d-flex {
+  display: flex;
+}
+
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  /* margin-bottom: 3rem; */
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 3rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.raceTrack {
+  background: url(./images/raceTrack.jpg) repeat center / contain;
+  height: 450px;
+  position: relative;
+  margin-top: 3rem;
+  text-align: left;
+  overflow: hidden;
+}
+
+.m-r {
+  margin-right: 2rem;
+}
+
+.m-b {
+  margin-bottom: 1rem;
+}
+
+.start,
+.reset {
+background-color: #242021;
+color: #fff;
+border: 2px solid #fff;
+padding:1rem 4rem;
+border-radius: 3%;
+transition: .3s ease-in-out;
+
+}
+.start:hover,
+.reset:hover {
+  color: Green;
+  border: 2px solid green;
+  
+}
+.dark-track {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.car1,
+.car2 {
+  width: 300px;
+}
+
+.results {
+  color: white;
+  display: flex;
+  margin-top: 3rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-1 {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
+ 
+}
+.container-2 {
+  width: 50%;
+}
+.result-cont {
+  border: 1px solid white;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.prev-results-header {
+  margin-bottom: 5.5rem;
+}
+.result-cont p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.container-2 p {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid white;
+  margin-bottom: 0;
+  padding: 1.5rem 0;
+}
+.counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 6.25rem;
+  z-index: 1111;
+}
+.car-1-title {
+  color: #ffebf7;
+}
+.car-2-title {
+  color: #ba0000;
+}
+
+.car-2 {
+  margin-top: -7.5rem;
+}
+.results span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.finishFlag {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.result-cont-2 span,
+.car-2-last-race span {
+  color: #ba0000;
+}
+@media screen and (max-width: 768px) {
+  .car-1,
+  .car-2 {
+    width: 200px;
+  }
+  .car-2 {
+    margin-top: 3rem;
+  }
+  .car-1-last-race,
+  .car-2-last-race {
+    font-size: 0.5rem;
+  }
+  span {
+    font-size: 1rem;
+  }
+  .finishFlag {
+    height: 150px;
+    width: 200px;
+  }
+}
