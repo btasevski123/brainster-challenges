@@ -1,0 +1,249 @@
+/* css resets */
+body {
+  background-color: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 2rem;
+}
+
+.border {
+  border-bottom: 1px solid gray;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+/* navbar starts */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.links li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.links ul li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.badges i {
+  font-size: 1.8rem;
+  color: #5c5c5c;
+  transition: 0.3s ease-in-out;
+}
+
+.badges i:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.badges i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  padding: 2rem 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.filters {
+  flex-basis: 15%;
+  padding-top: 2rem;
+}
+
+.items {
+  flex-basis: 85%;
+}
+/* filter section */
+
+.filter-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender,
+.brand {
+  padding-top: 1rem;
+}
+
+.filters p {
+  background-color: lightgray;
+  text-align: center;
+  padding: 0 1rem;
+  border-radius: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.gender div,
+.brand div {
+  transition: 0.3s ease-in-out;
+}
+
+.brand span,
+.gender span {
+  text-transform: capitalize;
+}
+
+.filters a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.filters a:hover {
+  color: orange;
+}
+
+.filter-style:hover span {
+  color: orange;
+  font-weight: bold;
+}
+
+.filter-style:hover p {
+  background-color: orange;
+  color: #000;
+}
+
+
+/* items secton */
+
+.items {
+  padding: 3rem 0 3rem 3rem;
+}
+
+.inner-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid gray;
+  transition: 0.3s ease-in-out;
+}
+
+.card-img {
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+.card img {
+  width: 300px;
+  height: 200px;
+}
+
+.card-img:hover {
+  scale: 1.1;
+}
+
+.card-body {
+  background-color: orange;
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.card-body p {
+  margin-bottom: 0;
+}
+.card:hover {
+  border: 1px solid orange;
+}
+
+/* footer */
+footer {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: whitesmoke;
+}
+
+.footer-item {
+  flex: 0 1 33.333%;
+}
+
+.social-icons a i {
+  font-size: 3rem;
+  color: white;
+  background-color: orange;
+  padding: 1rem;
+  margin-right: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.social-icons a i:hover {
+  background-color: gray;
+}
+
+.footer-links {
+  border-left: 1px solid gray;
+  padding-left: 1rem;
+}
+
+.footer-links h3,
+.social-icons h3 {
+  margin-top: 0;
+}
+.footer-links li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer-links li a {
+  color: #000;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+.footer-links li a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+/*use color:orange for the orange color*/
+/*use background-color: #d3d3d3; color: #5c5c5c; for the badges*/
+/*use color:grey for the social-share icons on hover*/
