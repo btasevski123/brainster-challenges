@@ -1,0 +1,52 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .logo {
+    width: 6rem;
+    cursor: pointer;
+  }
+  
+  .links ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .links li {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  .links li:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  .links ul li:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  
+  .badges i {
+    font-size: 1.5rem;
+    color: #5c5c5c;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .badges i:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  .badges i:hover {
+    color: orange;
+    cursor: pointer;
+  }
+
+  /* title */
+  .title  {
+    padding: 1.5rem 0;
+  }
+  

@@ -1,0 +1,37 @@
+/* css resets */
+body {
+  background-color: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 2rem;
+}
+
+.border {
+  border-bottom: 1px solid gray;
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+
