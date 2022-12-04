@@ -1,0 +1,23 @@
+.navbar {
+  background-color: aqua;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar img {
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.navbar h1 {
+  position: absolute;
+  color: whitesmoke;
+  z-index: 1111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

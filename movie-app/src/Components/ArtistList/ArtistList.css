@@ -1,0 +1,14 @@
+.artist-card {
+   position: relative;
+   margin-bottom: 1rem;
+
+}
+
+.artist-card span {
+    position:absolute;
+    bottom: 0.4%;
+    left: 4.5%;
+    background-color: aqua;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}

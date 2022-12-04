@@ -1,0 +1,11 @@
+.App {
+  max-width: 768px; 
+  margin: 0 auto;
+  text-align: center;
+}
+.Wrapper {
+  background-color: #d3d3d3;
+}
+ img {
+  max-width: 100%;
+ }
