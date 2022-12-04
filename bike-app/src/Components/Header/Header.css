@@ -3,6 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    border-bottom: 1px solid gray;
   }
   
   .logo {
@@ -48,5 +49,6 @@ nav {
   /* title */
   .title  {
     padding: 1.5rem 0;
+    font-size: 1.2rem;
   }
   
